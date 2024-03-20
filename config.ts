@@ -11,7 +11,7 @@ import { Config } from './src/types/config';
 // Use an editor with Typescript support to get autocomplete and validity checking!
 export const config: Config = {
   // General
-  name: 'John',
+  name: 'Kompreya',
   openInNewTab: true,
   title: 'Bento',
 
@@ -24,16 +24,16 @@ export const config: Config = {
     // 'google' or 'local'
     source: 'google',
     // Font name, e.g. 'Roboto' (case sensitive)
-    name: 'Overpass',
+    name: 'Lexend',
   },
 
   // Theme
-  theme: 'bento',
+  theme: 'pastelpurple',
 
   // Place a background image in ./src/assets/images/ and provide the file name.
   // Alternatively, provide a URL to an image. If the page is served over https, you may have issues loading images from insecure origins.
   // Set to "" to disable.
-  backgroundImage: '',
+  backgroundImage: 'background',
   themes: [
     // List of installed themes, add your own themes in ./src/assets/css/themes and include it in the array below.
     'arc',
@@ -46,11 +46,12 @@ export const config: Config = {
     'nord',
     'sakura',
     'solarized',
+    'pastelpurple',
   ],
 
   // Search Bar
   searchBar: true,
-  searchEngine: 'google', // google, ddg
+  searchEngine: 'ddg', // google, ddg
   barPlaceholder: '', // if blank, use search engine name. Set to ' ' for no placeholder.
   autoFocusBar: true,
 
@@ -61,12 +62,12 @@ export const config: Config = {
   greetingNight: 'Sweet dreams,',
 
   // Layout
-  layout: 'bento', // 'bento', 'lists', 'buttons'
+  layout: 'buttons', // 'bento', 'lists', 'buttons'
 
   // Weather
   weatherKey: import.meta.env.VITE_API_KEY, // Set your OpenWeatherMap key in .env - Move the included .env.example to .env
-  weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
-  weatherUnit: 'C', // 'F', 'C'
+  weatherIcons: 'Tela', // 'Onedark', 'Nord', 'Dark', 'White'
+  weatherUnit: 'F', // 'F', 'C'
   language: 'en', // More languages in https://openweathermap.org/current#multi
 
   trackLocation: true, // Request location from the browser. If false, or location is denied, use the coordinates below.
@@ -78,7 +79,7 @@ export const config: Config = {
   // "location" - Switches based on local sunrise/sunset (requires OpenWeatherMap API key)
   // "preset" - Switches based on set hours
   // "none" - No automatic switching
-  autoTheme: 'system',
+  autoTheme: 'none',
 
   // If autoTheme is set to "preset", set the hours below.
   darkModeOnTime: '18:30',
@@ -89,7 +90,7 @@ export const config: Config = {
   // Disabling the weather component may cause issues with location-based light/dark switching.
   componentsEnabled: {
     searchBar: true,
-    themeButton: true,
+    themeButton: false,
     clock: true,
     greeter: true,
     date: true,
