@@ -13,7 +13,7 @@ export const config: Config = {
   // General
   name: 'Kompreya',
   openInNewTab: true,
-  title: 'Bento',
+  title: 'Welcome',
 
   // Clock
   twelveHourFormat: false,
