@@ -79,7 +79,7 @@ export const config: Config = {
   // "location" - Switches based on local sunrise/sunset (requires OpenWeatherMap API key)
   // "preset" - Switches based on set hours
   // "none" - No automatic switching
-  autoTheme: 'none',
+  autoTheme: 'system',
 
   // If autoTheme is set to "preset", set the hours below.
   darkModeOnTime: '18:30',
@@ -90,7 +90,7 @@ export const config: Config = {
   // Disabling the weather component may cause issues with location-based light/dark switching.
   componentsEnabled: {
     searchBar: true,
-    themeButton: false,
+    themeButton: true,
     clock: true,
     greeter: true,
     date: true,
